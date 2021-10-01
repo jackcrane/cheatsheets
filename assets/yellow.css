@@ -1,0 +1,104 @@
+body {
+  -webkit-print-color-adjust: exact !important;
+  background: #32373B;
+  color: #FFFBFE;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  padding: 25px;
+}
+body .lang {
+  background: repeating-linear-gradient(-70deg, #FFC43D, #FFC43D 12px, transparent 0, transparent 15px);
+}
+body .lang a {
+  font-family: 'IBM Plex Mono', monospace;
+  background: #FFC43D;
+  padding: 10px;
+  font-size: 24px;
+}
+body .nav {
+  color: #FFFBFE;
+}
+body h1 {
+  font-size: 80px;
+  margin: 0;
+}
+body hr {
+  width: 100px;
+  height: 10px;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: #FFC43D;
+  margin-top: 45px;
+}
+body .svg {
+  height: 15px;
+}
+@media screen {
+  body .svg {
+    fill: white;
+  }
+}
+body .tooltip {
+  position: relative;
+}
+body .tooltip::before {
+  content: attr(data-text);
+  /* here's the magic */
+  position: absolute;
+  /* vertically center */
+  top: 50%;
+  transform: translateY(-50%);
+  /* move to right */
+  left: 100%;
+  margin-left: 15px;
+  /* and add a small left margin */
+  /* basic styles */
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  display: none;
+  /* hide by default */
+}
+body .tooltip:hover::before {
+  display: block;
+}
+body main h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+body main h1 * {
+  background: none!important;
+}
+body main code {
+  font-family: 'IBM Plex Mono', monospace;
+}
+body main pre code {
+  padding: 30px;
+  display: block;
+  background: #4A5859;
+}
+body main code {
+  background: #4A5859;
+}
+@media print {
+  body main code {
+    background: lightgrey;
+  }
+}
+body footer {
+  color: #4A5859;
+}
+@media screen {
+  body footer {
+    color: lightgrey;
+  }
+}
+@media print {
+  body {
+    color: #32373B;
+  }
+}
