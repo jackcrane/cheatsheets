@@ -11,11 +11,11 @@ body {
   }
 }
 body .lang {
-  background: repeating-linear-gradient(-70deg, #FFC43D, #FFC43D 12px, transparent 0, transparent 15px);
+  background: repeating-linear-gradient(-70deg, #3A86FF, #3A86FF 12px, transparent 0, transparent 15px);
 }
 body .lang a {
   font-family: 'IBM Plex Mono', monospace;
-  background: #FFC43D;
+  background: #3A86FF;
   padding: 10px;
   font-size: 24px;
 }
@@ -42,7 +42,7 @@ body hr {
   margin: 0;
   border: none;
   outline: none;
-  background: #FFC43D;
+  background: #3A86FF;
   margin-top: 45px;
 }
 body .svg {

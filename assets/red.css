@@ -1,6 +1,6 @@
 body {
   -webkit-print-color-adjust: exact !important;
-  background: #32373B;
+  box-shadow: inset 0 0 0 10000px #32373B, 0 0 0 10000px #32373B;
   color: #FFFBFE;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
@@ -43,11 +43,7 @@ body hr {
 }
 body .svg {
   height: 15px;
-}
-@media screen {
-  body .svg {
-    fill: white;
-  }
+  fill: white;
 }
 body .tooltip {
   position: relative;
@@ -93,22 +89,9 @@ body main pre code {
 }
 body main code {
   background: #4A5859;
-}
-@media print {
-  body main code {
-    background: lightgrey;
-  }
+  background: lightgrey;
 }
 body footer {
+  color: lightgrey;
   color: #4A5859;
-}
-@media screen {
-  body footer {
-    color: lightgrey;
-  }
-}
-@media print {
-  body {
-    color: #32373B;
-  }
 }

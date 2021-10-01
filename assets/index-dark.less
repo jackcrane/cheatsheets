@@ -1,9 +1,9 @@
 body {
   -webkit-print-color-adjust: exact !important;
-  @media screen {
+  // @media screen {
     box-shadow: inset 0 0 0 10000px @dkgrey, 0 0 0 10000px @dkgrey;
-  }
-  color: @wht;
+    color: @wht;
+  // }
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   padding: 25px;
@@ -44,9 +44,9 @@ body {
   }
   .svg {
     height: 15px;
-    @media screen {
+    // @media screen {
       fill: white;
-    }
+    // }
   }
   .tooltip {
     position:relative;
@@ -97,21 +97,21 @@ body {
     }
     code {
       background: @medgrey;
-      @media print {
-        background: lightgrey;
-      }
+      // @media print {
+        // background: lightgrey;
+      // }
     }
   }
   footer {
-    @media screen {
+    // @media screen {
       color: lightgrey;
-    }
-    color: @medgrey;
+    // }
+    // color: @medgrey;
   }
 }
 
-@media print {
-  body {
-    color: @dkgrey;
-  }
-}
+// @media print {
+//   body {
+//     color: @dkgrey;
+//   }
+// }
